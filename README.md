@@ -216,3 +216,11 @@ export async function getStaticProps() {
     };
 }
 ```
+20. in "next.config.js", add:
+```
+module.exports = {
+    images: {
+      domains: ['yourdomain'],
+    },
+}
+```
