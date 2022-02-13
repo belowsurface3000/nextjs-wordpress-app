@@ -1,5 +1,6 @@
 # Next.js, GraphQL, Wordpress Project
 heavily inspired by this repo: https://github.com/kellenmace/atlas-content-modeler-demo
+
 a Next.js App, using Wordpress with GraphQL for the backend
 
 ## create the Wordpress backend
