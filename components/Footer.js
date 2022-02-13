@@ -1,15 +1,12 @@
 import React from 'react';
+import Image from 'next/image';
+import Link from "next/link";
 
 function Footer() {
   return <>
     <footer id="footer">
 
-        <picture>
-          <source srcSet={require("../images/bannerSmall.jpg")} media="(max-width: 850px)" />
-          <source srcSet={require("../images/bannerMid.jpg")} media="(max-width: 1600px)" />
-          <source srcSet={require("../images/bannerHigh.jpg")} />
-          <img src={require("../images/banner.JPG")} alt="The belowsurface.de banner" />
-        </picture>
+      <Image src={require("../images/banner.JPG")} alt="The belowsurface.de banner" layout="fill" />
       
       <div className="content">
         <h1>Reached the end!</h1>
@@ -24,9 +21,9 @@ function Footer() {
       <div className="bottom-text">
         <p>(c) 2022 Below Surface Medien</p>
         <div>
-          <a to="impressum">Impressum</a>
+          <Link href="/Impressum"><a>Impressum</a></Link>
           <p>|</p>
-          <a to="datenschutz">Datenschutz</a>
+          <Link href="/Datenschutz"><a>Datenschutz</a></Link>
         </div>
       </div>
       

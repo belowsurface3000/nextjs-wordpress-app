@@ -289,16 +289,28 @@ main {
     .about-flexbox,
     .skills-first-flexbox {
         @include flexBox;
-        img {
+        .imageContainer {
+            flex-shrink: 0;
+            position: relative;
+            height: 300px;
+            width: 300px;
             margin-left: 50px;
-            @include basicImage;
+            img {
+                @include basicImage;
+            }
         }
     }
     .services-flexbox {
         @include flexBox;
-        img {
+        .imageContainer {
+            flex-shrink: 0;
+            position: relative;
+            height: 300px;
+            width: 300px;
             margin-right: 50px;
-            @include basicImage;
+            img {
+                @include basicImage;
+            }
         }
     }
     .skills-second-flexbox {

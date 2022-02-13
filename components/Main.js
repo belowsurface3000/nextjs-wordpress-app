@@ -6,6 +6,7 @@ import Contact from './Contact';
 import References from './References';
 import Services from './Services';
 import Skills from './Skills';
+import Footer from './Footer';
 
 function Main() {
 
@@ -23,6 +24,7 @@ function Main() {
         <References />
         <Contact />
     </main>
+    <Footer />
     </>;
 }
 
