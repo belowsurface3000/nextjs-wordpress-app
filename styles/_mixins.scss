@@ -1,0 +1,21 @@
+@import "variables";
+
+@mixin flexBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin centerIt {
+    text-align: center;
+    margin: 0 auto;
+}
+
+@mixin basicImage {
+    box-shadow: $box-shadow-dark;
+    outline: solid 3px $prim-bg;
+    border-radius: 5px;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}

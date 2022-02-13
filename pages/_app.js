@@ -5,6 +5,7 @@ import styles from "../styles/style.scss";
 function MyApp({ Component, pageProps }) {
   return (
     <ApolloProvider client={client}>
+      <div className="background-color"></div>
       <Component {...pageProps} />
     </ApolloProvider>
   );
