@@ -38,7 +38,7 @@ export default function Tutorial({ tutorial }) {
             <div>
                 <h1>{tutorialTitle}</h1>
                 {tutorialPicture && 
-                <Image src={tutorialPicture.mediaItemUrl} alt={tutorialPicture.altText} layout='fill' />}
+                <Image src={tutorialPicture.mediaItemUrl} alt={tutorialPicture.altText}  width={350} height={250} />}
             </div>
             <div>
                 <h3>{formatDate(tutorialDate)}</h3>

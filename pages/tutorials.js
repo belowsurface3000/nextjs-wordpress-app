@@ -25,17 +25,20 @@ export default function Tutorials(props) {
 
     return (
         <Layout>
+            <Link href="/">
+                <a>Back to the main page</a>
+            </Link>
             <h1>Tutorials</h1>
-            {tutorials.map((tutorial) => (
-                <div key={tutorial.databaseId}>
-                    <h3>
-                        <Link href={`tutorial/${tutorial.databaseId}`}>
-                            <a>{tutorial.tutorialTitle}</a>
-                        </Link>
-                    </h3>
-                    {tutorial.tutorialPicture && <Image src={tutorial.tutorialPicture.mediaItemUrl} alt={tutorial.tutorialPicture.altText} layout='fill'/>}
-                </div>
-            ))}
+            <div className="tutorial-card-container">
+                {tutorials.map((tutorial) => (
+                    <Link href={`tutorial/${tutorial.databaseId}`}>
+                        <div key={tutorial.databaseId} className="tutorial-card">
+                            <h3>{tutorial.tutorialTitle}</h3>
+                            {tutorial.tutorialPicture && <Image src={tutorial.tutorialPicture.mediaItemUrl} alt={tutorial.tutorialPicture.altText} width={350} height={250} />}
+                        </div>
+                    </Link>
+                ))}
+            </div>
         </Layout>
     );
 }

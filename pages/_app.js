@@ -1,5 +1,6 @@
 import { ApolloProvider } from "@apollo/client/react";
 import { client } from "../lib/apolloClient";
+import styles from "../styles/style.scss";
 
 function MyApp({ Component, pageProps }) {
   return (
