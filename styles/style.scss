@@ -540,20 +540,26 @@ main {
     .tutorial-card-container {
         margin: 35px 0;
         display: flex;
-        justify-content: center;
+        flex-direction: row;
         > .tutorial-card {
-            padding: 25px;
+            padding: 10px;
             margin: 10px;
-            border: solid 1px black;
+            border: solid 3px rgba(255, 255, 255, 0.356);
             border-radius: 15px;
             box-shadow: 0 0 15px rgba(0,0,0,.3);
+            background:rgba(0,0,0,0.2);
             width: 500px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            align-items: center;
             cursor: pointer;
-            h3 {
+            > h3 {
                 font-size: 2rem;
+                margin-bottom: 15px;
+            }
+            img {
+                object-fit: contain;
             }
         }
     }

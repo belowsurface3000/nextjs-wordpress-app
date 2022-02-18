@@ -42,7 +42,7 @@ export default function Tutorial({ tutorial }) {
             </div>
             <div>
                 <h3>{formatDate(tutorialDate)}</h3>
-                <p>{parse(tutorialText)}</p>
+                <div>{parse(tutorialText)}</div>
             </div>
         </Layout>
     );
